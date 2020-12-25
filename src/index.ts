@@ -15,6 +15,11 @@ class APIClient {
     method: Method,
     url: string,
     body?: any
+  ): Promise<T>;
+  private async req<T>(
+    method: Method,
+    url: string,
+    body?: any
   ): Promise<T> {
     const res = (await this.axios.request({ method, url, data: body })).data;
     return res;
