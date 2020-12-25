@@ -29,9 +29,9 @@ class APIClient {
     create: async (params: TodoRequest) =>
       this.req("POST", `/todos`, params)
   };
-  constructor(baseURL = "") {
+  constructor(baseURL = "https://api.prod.ashish.me") {
     this.axios = Axios.create({ baseURL: baseURL });
   }
 }
 
-export const API = new APIClient('https://api.prod.ashish.me');
+export const API = new APIClient();
