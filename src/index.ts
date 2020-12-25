@@ -27,7 +27,7 @@ class APIClient {
 
   todos = {
     getAll: async () =>
-      this.req<TodoResponse>(
+      this.req<TodoResponse[]>(
         "GET",
         `/todos`
       ),

@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "copy": "cp README.md package.json dist",
     "build": "npm run clean && tsc && npm run copy",
-    "publish": "npm run build && cd dist && npm publish --access public"
+    "publish": "cd dist && npm publish --access public"
   },
   "dependencies": {
     "@ashishdotme/sdk": "1.0.4",
