@@ -8,8 +8,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "copy": "cp README.md package.json dist",
-    "build": "npm run clean && tsc && npm run copy && cd dist",
-    "publish": "npm publish --access public"
+    "build": "npm run clean && tsc && npm run copy",
+    "publish:dist": "cd dist && npm publish --access public"
   },
   "dependencies": {
     "@ashishdotme/sdk": "1.0.4",
