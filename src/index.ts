@@ -34,7 +34,7 @@ class APIClient {
     create: async (params: TodoRequest) =>
       this.req("POST", `/todos`, params)
   };
-  constructor(baseURL = "https://api.prod.ashish.me") {
+  constructor(baseURL = "https://systemapi.prod.ashish.me") {
     this.axios = Axios.create({ baseURL: baseURL });
   }
 }
